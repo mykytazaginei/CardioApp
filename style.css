@@ -42,9 +42,9 @@ a:visited {
 
 /* Боковая панель */
 .sidebar {
-  flex-basis: 30rem;
+  flex-basis: 60rem;
   background-color: var(--color-dark--1);
-  padding: 5rem 5rem 3rem 5rem;
+  padding: 5rem 2rem 3rem 2rem;
   display: flex;
   flex-direction: column;
 }
