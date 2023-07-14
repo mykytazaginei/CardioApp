@@ -21,7 +21,7 @@ class WorkOut{
 
     _setDescription(){
         this.type === 'running' ? this.description = 
-        `Пробежка ${new Intl.DateTimeFormat('en-US').format(this.date)}` : this.description = `Велотренеровка ${this.date}`;
+        `Пробежка ${new Intl.DateTimeFormat('en-US').format(this.date)}` : this.description = `Велотренеровка ${new Intl.DateTimeFormat('en-US').format(this.date)}`;
     }
 };
 
@@ -242,9 +242,6 @@ class App{
 
         this.#map.setView(workout.coords, 13, { 
             animate: true,
-            pan: {
-                duration: 1,
-            },
         });
     }
 
@@ -271,3 +268,4 @@ class App{
 };
 
 const app = new App();
+
